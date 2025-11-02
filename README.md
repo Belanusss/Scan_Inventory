@@ -1,5 +1,4 @@
 Scan Inventory
-Scan Inventory
 Prosta aplikacja mobilna do zarządzania zapasami, zbudowana przy użyciu NativeScript i Angular. Aplikacja umożliwia przeglądanie listy produktów, dodawanie nowych z wykorzystaniem aparatu fotograficznego, edycję oraz usuwanie istniejących pozycji.
 A simple mobile application for inventory management, built with NativeScript and Angular. The application allows users to view a list of products, add new ones using the camera, and edit or delete existing items.
 
