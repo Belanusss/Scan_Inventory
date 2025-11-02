@@ -3,7 +3,7 @@ import { provideZonelessChangeDetection } from '@angular/core';
 import { AppComponent } from './app/app.component';
 import { routes } from './app/app.routes';
 
-// Регистрируем только CameraPlus
+
 import { CameraPlus } from '@nstudio/nativescript-camera-plus';
 registerElement("CameraPlus", () => CameraPlus);
 

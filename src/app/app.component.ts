@@ -8,6 +8,6 @@ import { NativeScriptRouterModule } from '@nativescript/angular';
   imports: [
     NativeScriptRouterModule,
   ],
-  schemas: [NO_ERRORS_SCHEMA], // <-- Добавляем эту строку
+  schemas: [NO_ERRORS_SCHEMA], 
 })
 export class AppComponent {}

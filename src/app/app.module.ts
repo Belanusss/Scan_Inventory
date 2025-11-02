@@ -9,7 +9,7 @@ import { routes } from './app.routes';
     NativeScriptModule,
     NativeScriptHttpClientModule,
     NativeScriptRouterModule.forRoot(routes),
-    AppComponent, // <-- Вот как мы импортируем standalone компонент
+    AppComponent, 
   ],
   bootstrap: [AppComponent],
   schemas: [NO_ERRORS_SCHEMA],
