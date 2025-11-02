@@ -1,5 +1,5 @@
 import { NativeScriptConfig } from '@nativescript/core';
-
+/**/
 export default {
   id: 'org.nativescript.ScanInventory',
   appPath: 'src',
