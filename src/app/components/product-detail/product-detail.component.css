@@ -1,0 +1,22 @@
+.p-15 { padding: 15; }
+.m-t-15 { margin-top: 15; }
+.m-b-15 { margin-bottom: 15; }
+.text-center { text-align: center; }
+.text-secondary { color: #888; }
+
+.product-image {
+  height: 250;
+  border-radius: 10;
+}
+
+.label {
+  font-size: 14;
+  font-weight: bold;
+  color: #555;
+  margin-top: 20;
+  margin-bottom: 5;
+}
+
+.description, .status {
+  font-size: 16;
+}

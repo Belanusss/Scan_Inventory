@@ -1,0 +1,45 @@
+<ActionBar [title]="pageTitle">
+  <NavigationButton text="Back" android.systemIcon="ic_menu_back" (tap)="router.backToPreviousPage()"></NavigationButton>
+  <ActionItem (tap)="onSubmit()" ios.position="right" text="Save"></ActionItem>
+</ActionBar>
+
+<GridLayout>
+  <ScrollView>
+    <!-- --- THE FIX: Corrected all "class." attributes to "class" --- -->
+    <StackLayout class="form">
+      <Image *ngIf="productImageSource" [src]="productImageSource" stretch="aspectFit" class="product-image-preview"></Image>
+      <Label *ngIf="!productImageSource" text="No photo added" class="hint text-center"></Label>
+      
+      <Label text="Product Name" class="label"></Label>
+      <TextField hint="Enter product name" [(ngModel)]="product.name" class="input"></TextField>
+
+      <Label text="Product Code" class="label"></Label>
+      <TextField hint="Enter code manually" [(ngModel)]="product.code" class="input"></TextField>
+      
+      <Label text="Description" class="label"></Label>
+      <TextView hint="Enter description (optional)" [(ngModel)]="product.description" class="input text-area"></TextView>
+
+      <Label text="Status" class="label"></Label>
+      <ListPicker 
+          [items]="availableStatuses" 
+          [selectedIndex]="selectedStatusIndex" 
+          (selectedIndexChange)="onStatusChange($event)"
+          class="input" 
+          height="120">
+      </ListPicker>
+
+      <Button text="Take Product Photo" (tap)="onShowCameraTap()" class="btn btn-primary m-t-20"></Button>
+    </StackLayout>
+    <!-- --- END OF FIX --- -->
+  </ScrollView>
+
+  <GridLayout *ngIf="showCamera" backgroundColor="black">
+      <CameraPlus
+        height="100%"
+        width="100%"
+        (photoCapturedEvent)="onPhotoCaptured($event)"
+        (errorEvent)="onError($event)">
+      </CameraPlus>
+      <Button text="Close" (tap)="onCancelCamera()" verticalAlignment="top" horizontalAlignment="right" class="btn-close"></Button>
+  </GridLayout>
+</GridLayout>

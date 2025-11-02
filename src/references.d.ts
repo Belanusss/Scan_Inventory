@@ -1,0 +1,1 @@
+/// <reference path="../node_modules/@nativescript/types-android/lib/android-34.d.ts" />

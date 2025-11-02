@@ -1,0 +1,60 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Laptop Pro 15",
+      "code": "NS-LP-15-PRO",
+      "description": "A powerful laptop for office work.",
+      "imageUrl": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400",
+      "status": "Out of Stock"
+    },
+    {
+      "id": "2",
+      "name": "Wireless Mouse",
+      "code": "NS-MS-WL-01",
+      "description": "Ergonomic mouse with 5 buttons.",
+      "imageUrl": "https://images.unsplash.com/photo-1615663245642-865bdfb63579?w=400",
+      "status": "Low Stock"
+    },
+    {
+      "id": "3",
+      "name": "Mechanical Keyboard",
+      "code": "NS-KB-MECH-RGB",
+      "description": "Keyboard with RGB backlight and blue switches.",
+      "imageUrl": "https://images.unsplash.com/photo-1618384887924-2c9535d13543?w=400",
+      "status": "In Stock"
+    },
+    {
+      "id": "99ec",
+      "name": "tripa",
+      "code": "tropa",
+      "description": "bibi",
+      "imageUrl": "/data/user/0/org.nativescript.ScanInventory/files/product-1762092978122.jpg",
+      "status": "In Stock"
+    },
+    {
+      "id": "4290",
+      "name": "tip",
+      "code": "pit",
+      "description": "iop",
+      "imageUrl": "/data/user/0/org.nativescript.ScanInventory/files/product-1762098580996.jpg",
+      "status": "Low Stock"
+    },
+    {
+      "id": "f598",
+      "name": "test1",
+      "code": "code teat",
+      "description": "optional",
+      "imageUrl": "/data/user/0/org.nativescript.ScanInventory/files/product-1762099269079.jpg",
+      "status": "Out of Stock"
+    },
+    {
+      "id": "3bcd",
+      "name": "555",
+      "code": "888",
+      "description": "333",
+      "imageUrl": "/data/user/0/org.nativescript.ScanInventory/files/product-1762100167956.jpg",
+      "status": "Low Stock"
+    }
+  ]
+}

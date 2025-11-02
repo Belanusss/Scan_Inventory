@@ -1,0 +1,9 @@
+.list-group-item {
+  padding: 10 15;
+  border-bottom-width: 1;
+  border-bottom-color: #e0e0e0;
+}
+
+.text-secondary {
+  color: #888;
+}

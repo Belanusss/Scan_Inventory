@@ -1,0 +1,26 @@
+<ActionBar title="Product Details">
+  <NavigationButton text="Back" android.systemIcon="ic_menu_back" (tap)="router.backToPreviousPage()"></NavigationButton>
+</ActionBar>
+
+<ng-container *ngIf="product$ | async as product">
+  <ScrollView>
+    <StackLayout class="p-15">
+      <Image [src]="product.imageUrl" stretch="aspectFill" class="product-image"></Image>
+      <Label [text]="product.name" class="h1 text-center m-t-15"></Label>
+      <Label [text]="product.code" class="h3 text-center text-secondary m-b-15"></Label>
+      
+      <Label text="Description" class="label"></Label>
+      <Label [text]="product.description" textWrap="true" class="description"></Label>
+
+      <Label text="Status" class="label"></Label>
+      <Label [text]="product.status" class="status"></Label>
+
+      <!-- ДОБАВЛЕНЫ КНОПКИ ДЕЙСТВИЙ -->
+      <GridLayout columns="*, *" class="m-t-20">
+        <Button text="Edit Product" (tap)="onEditTap(product.id)" col="0" class="btn btn-primary"></Button>
+        <Button text="Delete" (tap)="onDeleteTap(product.id)" col="1" class="btn btn-danger"></Button>
+      </GridLayout>
+
+    </StackLayout>
+  </ScrollView>
+</ng-container>

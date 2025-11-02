@@ -1,0 +1,16 @@
+<ActionBar title="Inventory">
+  <ActionItem (tap)="onAddTap()" ios.position="right" text="Add"></ActionItem>
+</ActionBar>
+
+
+<GridLayout>
+  <ListView [items]="products$ | async" (itemTap)="onItemTap($event)" class="list-group">
+    <ng-template let-item="item">
+      <GridLayout class="list-group-item" rows="auto, auto" columns="*, auto">
+        <Label [text]="item.name" row="0" col="0" class="h2"></Label>
+        <Label [text]="item.code" row="1" col="0" class="text-secondary"></Label>
+        <Label [text]="item.status" row="0" col="1" rowSpan="2" class="font-weight-bold" verticalAlignment="center"></Label>
+      </GridLayout>
+    </ng-template>
+  </ListView>
+</GridLayout>
